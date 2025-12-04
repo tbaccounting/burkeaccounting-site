@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – BurkeAccounting</title>
+  <meta name="description" content="Contact BurkeAccounting to request a quote, ask questions, or start your tax return or bookkeeping services." />
+  <link rel="icon" type="image/svg+xml" href="assets/logo-favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0B3C5D" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo-main.svg" alt="BurkeAccounting logo" class="brand-logo" />
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="testimonials.html" class="nav-link">Testimonials</a>
+        <a href="contact.html" class="nav-link nav-cta active">Get Started</a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Get in Touch</h1>
+        <p>Request a quote, ask a question, or start your return with BurkeAccounting.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid two-col">
+        <div>
+          <h2>Contact Form</h2>
+          <p>
+            Fill out the form and you’ll receive a follow-up with a simple checklist and next
+            steps. Do not include full Social Security Numbers or highly sensitive information in this form.
+          </p>
+
+          <!-- Replace YOUR_EMAIL_HERE with your address when you set up FormSubmit -->
+          <form class="contact-form" method="POST" action="https://formsubmit.co/YOUR_EMAIL_HERE">
+            <input type="hidden" name="_subject" value="New BurkeAccounting Inquiry" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+
+            <label>
+              Name
+              <input type="text" name="Name" required />
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="Email" required />
+            </label>
+
+            <label>
+              Tax Year
+              <input type="text" name="Tax Year" placeholder="e.g., 2024" />
+            </label>
+
+            <label>
+              Type of Help Needed
+              <select name="Service Type">
+                <option value="Simple W-2 Return">Simple W-2 Return</option>
+                <option value="Self-Employed / Side-Gig">Self-Employed / Side-Gig</option>
+                <option value="Small Business & Bookkeeping">Small Business & Bookkeeping</option>
+                <option value="Rental / Investment">Rental / Investment</option>
+                <option value="Other / Not Sure">Other / Not Sure</option>
+              </select>
+            </label>
+
+            <label>
+              Briefly describe your situation
+              <textarea name="Message" rows="5" placeholder="Example: 2 W-2s, some DoorDash income, and student loan interest."></textarea>
+            </label>
+
+            <label>
+              Link to a secure folder (optional)
+              <input type="url" name="Upload Link" placeholder="Google Drive or Dropbox link" />
+            </label>
+
+            <button type="submit" class="btn primary full-width">Submit</button>
+          </form>
+        </div>
+
+        <div>
+          <h2>How to Upload Documents</h2>
+          <p>
+            BurkeAccounting does not run its own file server. Instead, you control where your
+            documents live and share access securely:
+          </p>
+          <ol class="numbered-list">
+            <li>Create a folder in Google Drive or Dropbox.</li>
+            <li>Upload your W-2s, 1099s, and other tax documents.</li>
+            <li>Share a link with “view only” or limited access.</li>
+            <li>Paste that link into the form or in a follow-up email.</li>
+          </ol>
+          <p class="small">
+            Always protect your information. Do not email full Social Security Numbers in plain
+            text. Share sensitive documents only through secure channels.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img src="assets/logo-badge.svg" alt="BurkeAccounting BA monogram" class="footer-logo" />
+        <p>Non-CPA tax preparation and bookkeeping services based in Oklahoma.</p>
+      </div>
+      <div class="footer-links">
+        <a href="legal.html">Legal & Disclaimers</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> BurkeAccounting. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
