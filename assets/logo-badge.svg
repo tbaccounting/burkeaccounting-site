@@ -1,0 +1,31 @@
+<svg width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="220" height="220" fill="white"/>
+
+  <!-- Outer circle -->
+  <circle cx="110" cy="110" r="90" fill="#0B3C5D"/>
+
+  <!-- Inner circle -->
+  <circle cx="110" cy="110" r="78" fill="#F5F7FA"/>
+
+  <!-- BA text -->
+  <text x="110" y="120"
+        text-anchor="middle"
+        font-family="Segoe UI, Arial, sans-serif"
+        font-size="56"
+        font-weight="bold"
+        fill="#0B3C5D">
+    BA
+  </text>
+
+  <!-- Small subtitle bar -->
+  <rect x="55" y="140" width="110" height="26" rx="13" fill="#0B3C5D" opacity="0.08"/>
+
+  <text x="110" y="158"
+        text-anchor="middle"
+        font-family="Segoe UI, Arial, sans-serif"
+        font-size="13"
+        fill="#4B5563">
+    BurkeAccounting
+  </text>
+</svg>
