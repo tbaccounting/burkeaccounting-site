@@ -16,7 +16,7 @@
       <a href="index.html" class="brand">
         <img src="assets/logo-main.svg" alt="BurkeAccounting logo" class="brand-logo" />
       </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">Menu</button>
       <nav class="main-nav" id="mainNav">
         <a href="index.html" class="nav-link">Home</a>
         <a href="services.html" class="nav-link">Services</a>
@@ -26,7 +26,7 @@
         <a href="testimonials.html" class="nav-link">Testimonials</a>
         <a href="contact.html" class="nav-link nav-cta active">Get Started</a>
       </nav>
-      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">Dark</button>
     </div>
   </header>
 
@@ -47,8 +47,8 @@
             steps. Do not include full Social Security Numbers or highly sensitive information in this form.
           </p>
 
-          <!-- Replace YOUR_EMAIL_HERE with your address when you set up FormSubmit -->
-          <form class="contact-form" method="POST" action="https://formsubmit.co/YOUR_EMAIL_HERE">
+          <!-- FormSubmit now points to tbacct4@gmail.com -->
+          <form class="contact-form" method="POST" action="https://formsubmit.co/tbacct4@gmail.com">
             <input type="hidden" name="_subject" value="New BurkeAccounting Inquiry" />
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
@@ -110,6 +110,36 @@
             text. Share sensitive documents only through secure channels.
           </p>
         </div>
+      </div>
+    </section>
+
+    <!-- Scheduler section -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2>Schedule a Time</h2>
+        <p>
+          Prefer to pick a specific time to talk? Use the scheduler below to book a short intro
+          call. You can replace the link with your own Calendly or scheduling URL.
+        </p>
+
+        <div class="scheduler-wrapper">
+          <!-- Replace the data-url with your real Calendly or other scheduler link -->
+          <div class="calendly-inline-widget"
+               data-url="https://calendly.com/YOUR-CALENDLY-USERNAME/tax-intro-call"
+               style="min-width: 320px; height: 630px;">
+          </div>
+        </div>
+
+        <!-- Calendly widget script (safe on static GitHub Pages) -->
+        <script type="text/javascript"
+                src="https://assets.calendly.com/assets/external/widget.js"
+                async>
+        </script>
+
+        <p class="small">
+          To customize this, create a free Calendly account, set up an event, copy your embed link,
+          and replace the <code>data-url</code> above.
+        </p>
       </div>
     </section>
   </main>
